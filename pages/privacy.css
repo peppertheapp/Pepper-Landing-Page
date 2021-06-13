@@ -78,7 +78,7 @@ div#spencer {
   height: 200px
 }
 
-hero-about h1 {
+  #hero-about h1 {
     max-width: var(--container-width);
     margin: 5em auto !important;
     color: #fff;
@@ -88,6 +88,8 @@ hero-about h1 {
     margin: 2em auto !important;
   }
 }
+
+
   /* ===========================================
                 END  TABLET
   ============================================ */
