@@ -80,7 +80,7 @@ div#spencer {
 
   #hero-about h1 {
     max-width: var(--container-width);
-    margin: 5em auto !important;
+    margin: 2em auto !important;
     color: #fff;
   }
 
