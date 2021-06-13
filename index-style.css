@@ -138,11 +138,9 @@
     }
 
     .desktop-image {
-        padding: 1em 0 0 0;
+        padding: 2em 0 0 0;
     }
     /*end tracker*/
-
-
 
 
 
@@ -181,7 +179,7 @@
         padding: 4em 0 0 0;
     }
 
-    
+
     main #hero::after {
         content: '';
         background: url(images/index/header-background-mobile.png) center no-repeat;
@@ -225,6 +223,8 @@ section > div {
     padding: 0 3em;
 }
 
+
+
 }
 
 
@@ -266,12 +266,12 @@ section > div {
         position: absolute;
         z-index: -2;
     }
-    
+
     .hero-container{
         flex-direction: column;
         padding: 1.5em 2em 0;
     }
-    
+
     #hero button {
         width: 100%;
     }
@@ -309,7 +309,7 @@ section > div {
     .mobile-image {
         display: block;
     }
-    
+
     }
 
 
