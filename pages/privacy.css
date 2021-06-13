@@ -1,0 +1,147 @@
+:root {
+    --container-width: 1128px;
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --container-width: 90vw;
+    }
+}
+
+#hero-about {
+    background-image: url('privacy-images/hero-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 265px;
+    background-color: #F7736B;
+}
+
+#hero-about h1 {
+    max-width: var(--container-width);
+    margin: 2em auto;
+    color: #fff;
+}
+
+#pepper-intro {
+    background: #fafafa
+}
+
+
+nav {
+  max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+h2 {
+ margin: 0 0 .5em 0 !important;
+}
+
+section:not(#hero-about) {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 2em 0 0 0;
+}
+
+#nav {
+  padding: 3em 0 !important;
+}
+
+
+
+/* ===========================================
+                    TABLET
+  ============================================ */
+
+  @media screen and (max-width: 977px) and (min-width: 551px) {
+
+    .intro-container {
+        max-width: var(--container-width);
+    flex-direction: column;
+    }
+    .left-side-info {
+        width: 100%;
+    }
+    section > div {
+        padding: 0 3em;
+    }
+
+.right-side-images {
+    width: 68%;
+}
+div#spencer {
+    padding: 25px;
+}
+
+#hero-about {
+  height: 200px
+}
+
+hero-about h1 {
+    max-width: var(--container-width);
+    margin: 5em auto !important;
+    color: #fff;
+  }
+
+  /* ===========================================
+                END  TABLET
+  ============================================ */
+  @media (max-width: 890px) and (min-width:551px) {
+
+    .col-wrap,
+    .col-wrap-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-wrap-2 {
+        margin: 0;
+    }
+
+
+  }
+
+
+
+/* =============================
+              MOBILE
+  ============================== */
+
+
+  @media (max-width: 550px) {
+    .intro-container {
+        max-width: var(--container-width);
+    flex-direction: column;
+    }
+    .left-side-info {
+        width: 100%;
+    }
+    #last-card {
+        margin-bottom: 0;
+    }
+    section > div {
+        padding: 0 2em;
+    }
+    .right-side-images {
+        width: 100%;
+    }
+    .col-wrap,
+    .col-wrap-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-wrap-2 {
+        margin: 0;
+    }
+
+
+    .tile {
+        margin-bottom: 2em;
+    }
+
+    div#spencer {
+        padding: 25px 40px;
+    }
+  }
