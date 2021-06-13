@@ -44,7 +44,7 @@ section:not(#hero-about) {
 }
 
 section > div {
-    padding: 0 3em;
+    padding: 0 1em;
 }
 
 #nav {
@@ -67,7 +67,7 @@ section > div {
         width: 100%;
     }
     section > div {
-        padding: 0 3em;
+        padding: 0 2em;
     }
 
 .right-side-images {
