@@ -41,6 +41,7 @@ h2 {
 section:not(#hero-about) {
   max-width: var(--container-width);
   margin: 0 auto;
+  padding: 2em;
 }
 
 /* section > div {
