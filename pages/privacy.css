@@ -43,9 +43,9 @@ section:not(#hero-about) {
   margin: 0 auto;
 }
 
-section > div {
+/* section > div {
     padding: 0 1em;
-}
+} */
 
 #nav {
   padding: 3em 0 !important;
@@ -66,9 +66,9 @@ section > div {
     .left-side-info {
         width: 100%;
     }
-    section > div {
+    /* section > div {
         padding: 0 2em;
-    }
+    } */
 
 .right-side-images {
     width: 68%;
@@ -129,9 +129,9 @@ div#spencer {
     #last-card {
         margin-bottom: 0;
     }
-    section > div {
+    /* section > div {
         padding: 0 2em;
-    }
+    } */
     .right-side-images {
         width: 100%;
     }
