@@ -143,7 +143,6 @@
     /*end tracker*/
 
 
-
 /* ===========================================
                     TABLET
   ============================================ */
@@ -310,6 +309,12 @@ section > div {
         display: block;
     }
 
+
+    .copyright-privacy-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 3em 0 0 0;
+    }
     }
 
 

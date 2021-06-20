@@ -261,6 +261,22 @@ footer h3 {
 
 }
 
+p{
+    font-size: 1em;
+    margin: 1.7em 0 1.7em 0;
+}
+
+.privacy-terms-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#margin-right {
+    margin: 0 1em 0 0;
+}
+
+
+
 /* ===========================
        END FOOTER DESKTOP
   ============================ */
@@ -326,6 +342,12 @@ footer h3 {
             align-items: center !important;
             padding: 3em 0 0 0;
           }
+
+          p{
+            font-size: 1em;
+            margin: 1.7em 0 1.7em 0;
+        }
+
     }
 
 
@@ -363,6 +385,7 @@ footer h3 {
     }
     p{
         font-size: 1em;
+        margin: 1.7em 0 1.7em 0;
     }
 
     /* ===========================
@@ -429,11 +452,6 @@ footer h3 {
 
 
 
-
-footer p {
-    margin: 0;
-}
-
 footer ul li {
     display: block;
     padding: 0 0 1.5em;
@@ -448,6 +466,15 @@ footer ul li:nth-child(2n) {
 #copyright {
     text-align: center;
 }
+.privacy-terms-flex-container {
+    display: flex;
+    flex-direction: row;
+}
 
+.copyright-privacy-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 3em 0 0 0;
+  }
 
 }
