@@ -65,7 +65,7 @@ h4 {
 
 p,
 ul li {
-    font-size: 1.15em;
+    font-size: 1em;
     line-height: 1.4em;
     font-family: 'Lato', Arial, sans-serif;
     color: #000;
@@ -186,10 +186,9 @@ nav {
        FOOTER DESKTOP
   ============================ */
 
-  .footer {
-    max-width: var(--container-width);
-    margin: 0 auto;
+  footer {
     padding: 3em 3em 1.5em;
+    background: #fafafa;
 }
 
   footer .footer-container {
@@ -223,6 +222,11 @@ footer h3 {
     color: #000;
     text-decoration: none;
     font-family: 'Lato', 'Arial', sans-serif;
+  }
+
+  .footer {
+    max-width: var(--container-width);
+    margin: 0 auto;
   }
 
    .right-side-footer {
@@ -271,7 +275,7 @@ p{
     flex-direction: row;
 }
 
-#margin-right {
+.margin-right {
     margin: 0 1em 0 0;
 }
 
@@ -341,6 +345,7 @@ p{
             flex-direction: column !important;
             align-items: center !important;
             padding: 3em 0 0 0;
+            text-align: center;
           }
 
           p{
@@ -475,6 +480,8 @@ footer ul li:nth-child(2n) {
     flex-direction: column !important;
     align-items: center !important;
     padding: 3em 0 0 0;
+    text-align: center;
+    font-size: .7em;
   }
 
 }
