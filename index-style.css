@@ -1,122 +1,117 @@
 :root {
-    --container-width: 1128px;
+  --container-width: 1128px;
 }
 
 @media screen and (max-width: 600px) {
-    :root {
-        --container-width: 90vw;
-    }
+  :root {
+    --container-width: 90vw;
+  }
 }
-
 
 /* =============================
           DESKTOP STYLES
    ============================*/
 
-   section > div{
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 3em;
-
+section > div {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 3em;
 }
 
-    /*HERO*/
+/*HERO*/
 
-    section#hero {
-        position: relative;
-        overflow-y: hidden;
-        padding: 3em 0 3em 0;
-    }
+section#hero {
+  position: relative;
+  overflow-y: hidden;
+  padding: 3em 0 3em 0;
+}
 
+main #hero::after {
+  content: "";
+  background-image: url("images/index/header-background-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  z-index: -2;
+}
 
-    main #hero::after {
-        content: '';
-        background-image: url('images/index/header-background-desktop.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-x: right;
-        top: 0;
-        bottom:0;
-        left: 0;
-        right:0;
-        position: absolute;
-        display: block;
-        z-index: -2;
-    }
+.hero-container {
+  display: flex;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 2em 0;
+}
 
-    .hero-container {
-        display: flex;
-        max-width: var(--container-width);
-        margin:0 auto;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2.5em 2em 0;
-    }
+#screen-images img {
+  max-width: 415px;
+  width: 100%;
+}
 
-    #screen-images img {
-        max-width: 415px;
-        width: 100%;
-    }
+#hero button {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  box-shadow: none;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 10px;
+  margin: 0;
+  /* width: 200px; */
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
 
-    #hero button {
-        background: #000;
-        border: 1px solid #000;
-        color: #fff;
-        box-shadow: none;
-        font-family: 'Lato', Arial, sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        border-radius: 10px;
-        margin: 0;
-        /* width: 200px; */
-        padding: .5em 1em;
-        cursor: pointer;
-    }
+#pepper-tracker p {
+  margin: 0;
+}
 
-    #pepper-tracker  p {
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 1.25em;
-        margin: 1em 0 1em 0;
-    
-    }
-
+h3 {
+  font-size: 1.25em;
+  margin: 1em 0 1em 0;
+}
 
 /* ===============================
             HERO STYLES FORM
    =============================== */
 
-    form {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    /* .email-field-group {
+/* .email-field-group {
         width: 80%;
     } */
 
-    div#form {
-        max-width:  390px;
-    }
+div#form {
+  max-width: 390px;
+}
 
-    .email-field-group input {
-        padding: .5em 1em;
-        width: 196px;
-        border-radius: 10px;
-        font-family: 'Lato', Arial, sans-serif;
-        font-size: 16px;
-        border: 1px solid black;
-    }
+.email-field-group input {
+  padding: 0.5em 1em;
+  width: 196px;
+  border-radius: 10px;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid black;
+}
 
-    #submit {
-        /* width: 40%; */
-        margin: 0 0 0 .5em;
-    }
+#submit {
+  /* width: 40%; */
+  margin: 0 0 0 0.5em;
+}
 
-    /* .email-field-group input {
+/* .email-field-group input {
         width: 88%;
     }
 
@@ -124,234 +119,212 @@
         width: 68%;
     } */
 
-    /*end form*/
+/*end form*/
 
-    /*start tracker*/
+/*start tracker*/
 
-    .mobile-image {
-        display: block;
-        padding: 3em 0 0 0;
-    }
+.mobile-image {
+  display: block;
+  padding: 3em 0 0 0;
+}
 
-    #pepper-tracker {
-        background-color: #fafafa;
-    }
+#pepper-tracker {
+  background-color: #fafafa;
+}
 
-    #pepper-tracker img {
-        max-width: 100%;
-        width: 100%;
-    }
+#pepper-tracker img {
+  max-width: 100%;
+  width: 100%;
+}
 
-    .mobile-image {
-        display: none;
-    }
+.mobile-image {
+  display: none;
+}
 
-    .desktop-image {
-        padding: 2em 0 0 0;
-    }
-    /*end tracker*/
-
+.desktop-image {
+  padding: 2em 0 0 0;
+}
+/*end tracker*/
 
 /* ===========================================
                     TABLET
   ============================================ */
 @media screen and (max-width: 977px) and (min-width: 551px) {
+  .hero-container {
+    padding: 3.5em 2em 2.5em;
+  }
 
-    .hero-container {
-        padding: 3.5em 2em 2.5em;
-    }
+  section#hero {
+    padding: 3em 0 0 0;
+  }
 
-    section#hero {
-        padding: 3em 0 0 0;
-    }
+  .logo {
+    padding: 0em 2em 0;
+  }
+  #hero-text {
+    align-self: flex-start;
+  }
 
-    .logo {
-        padding: 0em 2em 0;
+  .hero-container {
+    flex-direction: column;
+  }
 
-    }
-    #hero-text {
-        align-self: flex-start;
-    }
+  .desktop-image {
+    display: none;
+  }
 
-    .hero-container{
-        flex-direction: column;
-    }
+  .mobile-image {
+    display: block;
+    padding: 4em 0 0 0;
+  }
 
+  main #hero::after {
+    content: "";
+    background: url(images/index/header-background-mobile.png) center no-repeat;
+    background-size: contain;
+    display: block;
+    top: 0;
+    left: 0;
+    background-position: bottom;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transform: translateY(12%);
+    position: absolute;
+    z-index: -2;
+  }
 
-    .desktop-image{
-        display: none;
-    }
-
-    .mobile-image {
-        display: block;
-        padding: 4em 0 0 0;
-    }
-
-
-    main #hero::after {
-        content: '';
-        background: url(images/index/header-background-mobile.png) center no-repeat;
-        background-size: contain;
-        display: block;
-        top: 0;
-        left: 0;
-        background-position: bottom;
-        bottom: 0;
-        right: 0;
-        opacity: 1;
-        transform: translateY(12%);
-        position: absolute;
-        z-index: -2;
-}
-
-#screen-images img {
+  #screen-images img {
     margin: 4em 0 2em 0;
     max-width: 60vw;
-}
+  }
 
-/* .email-field-group input {
+  /* .email-field-group input {
     width: 88%;
 } */
-/* 
+  /* 
 #submit {
     width: 55%;
 } */
 
-.desktop-image{
+  .desktop-image {
     display: none;
-}
+  }
 
+  /*every chef deserves an audience*/
 
-
-/*every chef deserves an audience*/
-
-section > div {
+  section > div {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 3em;
-}
+  }
 
-h1 {
+  h1 {
     font-size: 3em !important;
     line-height: 1.1em !important;
     max-width: 80vw !important;
+  }
 }
-
-
-
-
-}
-
 
 /* =============================
             END TABLET
   ============================== */
-
-
-
 
 /* =============================
               MOBILE
   ============================== */
 
 @media (max-width: 570px) {
+  h1 {
+    max-width: 100%;
+  }
 
-    h1 {
-        max-width: 100%;
-    }
+  section > div {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2em;
+  }
 
-    section > div {
-        max-width: var(--container-width);
-        margin: 0 auto;
-        padding: 0 2em;
-    }
+  main #hero::after {
+    content: "";
+    background: url(images/index/header-background-mobile.png) center no-repeat;
+    background-size: contain;
+    display: block;
+    top: 0;
+    left: 0;
+    background-position: bottom;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transform: translateY(0%);
+    position: absolute;
+    z-index: -2;
+  }
 
-    main #hero::after {
-        content: '';
-        background: url(images/index/header-background-mobile.png) center no-repeat;
-        background-size: contain;
-        display: block;
-        top: 0;
-        left: 0;
-        background-position: bottom;
-        bottom: 0;
-        right: 0;
-        opacity: 1;
-        transform: translateY(0%);
-        position: absolute;
-        z-index: -2;
-    }
+  .hero-container {
+    flex-direction: column;
+    padding: 2.5em 2em 0;
+  }
 
-    .hero-container{
-        flex-direction: column;
-        padding: 2.5em 2em 0;
-    }
-
-    /* #hero button {
+  /* #hero button {
         width: 100%;
     } */
 
-    section#hero {
-        padding: 3em 0 0 0;
-    }
+  section#hero {
+    padding: 3em 0 0 0;
+  }
 
-    .logo {
-        padding: 0 2em 0;
-    }
+  .logo {
+    padding: 0 2em 0;
+  }
 
-    #screen-images img {
-        margin: 2em 0;
-        max-width: 80vw;
-    }
+  #screen-images img {
+    margin: 2em 0;
+    max-width: 80vw;
+  }
 
-     form {
-         flex-direction: column;
-     }
+  form {
+    flex-direction: column;
+  }
 
-     .email-field-group,
-     #submit{
-         width: 100%;
-         margin: 0 0 1em 0;
-     }
-/* 
+  .email-field-group,
+  #submit {
+    width: 100%;
+    margin: 0 0 1em 0;
+  }
+  /* 
      .email-field-group input {
          width: calc(100% - 2em);
      } */
 
-     .desktop-image{
-        display: none;
-    }
-    .mobile-image {
-        display: block;
-    }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+  }
 
+  .copyright-privacy-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 3em 0 0 0;
+  }
 
-    .copyright-privacy-container {
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 3em 0 0 0;
-    }
+  .email-field-group input {
+    width: calc(100% - 2em);
+  }
 
-
-    .email-field-group input {
-        width: calc(100% - 2em);
-
-    }
-
-    #hero button {
-        width: 100%;
-    }
-    }
-
-
+  #hero button {
+    width: 100%;
+  }
+}
 
 /* =============================
             END MOBILE
   ============================== */
 
-
-  @media (max-width: 360px) {
-    section > div {
-        padding: 0 1em;
-    }
+@media (max-width: 360px) {
+  section > div {
+    padding: 0 1em;
   }
+}
